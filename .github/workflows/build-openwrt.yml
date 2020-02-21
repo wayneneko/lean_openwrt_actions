@@ -6,16 +6,14 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: Build Lean openwrt
 
 on:
   release:
     types: [published]
   push:
-    branches:
+    branches: 
       - master
-    paths:
-      - '.config'
 #   schedule:
 #     - cron: 0 20 * * *
 #  watch:

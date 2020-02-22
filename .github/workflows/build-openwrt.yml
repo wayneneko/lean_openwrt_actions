@@ -11,9 +11,9 @@ name: Lean openwrt
 on:
   release:
     types: [published]
-#   push:
-#     branches: 
-#       - master
+  push:
+    branches: 
+      - master
 #   schedule:
 #     - cron: 0 20 * * *
 #  watch:
@@ -67,6 +67,10 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
+      
+    - name: clean
+      run: cd openwrt 
+           make clean
 
     - name: Load custom configuration
       run: |

@@ -11,11 +11,11 @@ name: Lean openwrt
 on:
   release:
     types: [published]
-  push:
-    branches: 
-      - master
-  schedule:
-    - cron: 0 16 * * *
+#   push:
+#     branches: 
+#       - master
+#   schedule:
+#     - cron: 0 16 * * *
 #  watch:
 #    types: [started]
 
